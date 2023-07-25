@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sparks N Sizzles</title>
+    <link rel="icon" href="./logo.png" type="image/png" sizes="16x16">
     <style>
+        
+        body {
+            overflow: hidden;
+        }
+
         .style-0 {
             height: 100%;
-            isolation: isolate;
-            cursor: auto;
             isolation: isolate;
             cursor: auto;
             font-family: Futura, sans-serif;
@@ -25,7 +29,6 @@
 
         .style-1 {
             margin: 0;
-            width: 100%;
             width: 100%;
             height: 821px;
             margin-right: 0px;
@@ -54,7 +57,6 @@
             width: 100%;
             height: 100%;
             position: relative;
-            width: 100%;
             height: 821px;
             box-sizing: border-box;
         }
@@ -142,6 +144,7 @@
             vertical-align: middle;
             box-sizing: border-box;
             border: 0px none rgb(0, 0, 238);
+        
         }
 
         .style-12 {
@@ -203,21 +206,6 @@
             box-sizing: border-box;
         }
 
-        .style-19 {
-            height: 21px;
-            height:21px;
-            display: block;
-            width: auto;
-            margin-right: auto;
-            margin-left: 0px;
-            font-family: Futura, sans-serif;
-            font-size: 14px;
-            text-decoration: none;
-            max-width: 100%;
-            box-sizing: border-box;
-            background-color: rgba(0, 0, 0, 0);
-        }
-
         .style-20 {
             font-size: 14px;
             --navlink-hover-color: #ffffff;
@@ -238,7 +226,6 @@
 
         .style-21 {
             height: 21px;
-            height:21px;
             display: block;
             width: auto;
             margin-right: auto;
@@ -271,7 +258,6 @@
 
         .style-23 {
             height: 21px;
-            height:21px;
             display: block;
             width: auto;
             margin-right: auto;
@@ -304,7 +290,6 @@
 
         .style-25 {
             height: 21px;
-            height:21px;
             display: block;
             width: auto;
             margin-right: auto;
@@ -315,57 +300,6 @@
             max-width: 100%;
             box-sizing: border-box;
             background-color: rgba(0, 0, 0, 0);
-        }
-
-        .style-26 {
-            font-size: 14px;
-            --navlink-hover-color: #ffffff;
-            --navlink-background-color: #9e9e9e;
-            --nav-link-color: #ffffff--navlink-hover-color: #ffffff;
-            --navlink-background-color: #9e9e9e;
-            --nav-link-color: #ffffff;
-            width: fit-content;
-            margin-top: 20px;
-            margin-right: auto;
-            margin-left: auto;
-            font-family: Futura, sans-serif;
-            text-align: center;
-            padding: 1px 0px 0px 1px;
-            color: rgb(255, 255, 255);
-            box-sizing: border-box;
-        }
-
-        .style-27 {
-            height: 21px;
-            height:21px;
-            display: block;
-            width: auto;
-            margin-right: auto;
-            margin-left: 0px;
-            font-family: Futura, sans-serif;
-            font-size: 14px;
-            text-decoration: none;
-            max-width: 100%;
-            box-sizing: border-box;
-            background-color: rgba(0, 0, 0, 0);
-        }
-
-        .style-28 {
-            font-size: 14px;
-            --navlink-hover-color: #ffffff;
-            --navlink-background-color: #9e9e9e;
-            --nav-link-color: #ffffff--navlink-hover-color: #ffffff;
-            --navlink-background-color: #9e9e9e;
-            --nav-link-color: #ffffff;
-            width: fit-content;
-            margin-top: 20px;
-            margin-right: auto;
-            margin-left: auto;
-            font-family: Futura, sans-serif;
-            text-align: center;
-            padding: 1px 0px 0px 1px;
-            color: rgb(255, 255, 255);
-            box-sizing: border-box;
         }
 
         .style-29 {
@@ -409,10 +343,6 @@
             display: inline-block;
             box-sizing: border-box;
             border: 0px none rgb(0, 0, 238);
-        }
-
-        .style-33 {
-            box-sizing: border-box;
         }
 
         .style-34 {
@@ -615,170 +545,37 @@
             background-color: rgba(0, 0, 0, 0);
         }
 
-        .style-55 {
-            font-size: 14px;
-            --footer-mobile-font-size: 10px;
-            --footer-txt-color: #FFF;
-            --footer-highlight-txt-color: #FFF;
-            --footer-highlight-txt-bg-color: #9e9e9e;
-            color: rgb(255, 255, 255);
-            width: fit-content;
-            font-family: Futura, sans-serif;
-            margin-top: 0px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-        }
-
         .style-56 {
             text-decoration: none;
             box-sizing: border-box;
             background-color: rgba(0, 0, 0, 0);
         }
 
-        .style-57 {
-            font-size: 14px;
-            --footer-mobile-font-size: 10px;
-            --footer-txt-color: #FFF;
-            --footer-highlight-txt-color: #FFF;
-            --footer-highlight-txt-bg-color: #9e9e9e;
-            color: rgb(255, 255, 255);
-            width: fit-content;
-            font-family: Futura, sans-serif;
-            margin-top: 0px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -10%);
         }
 
-        .style-58 {
-            text-align: left;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            box-sizing: border-box;
-        }
-
-        .style-59 {
-            box-sizing: border-box;
-        }
-
-        .style-60 {
-            border-radius: 0px;
-            appearance: none;
-            box-sizing: border-box;
-            line-height: normal;
-            color: rgb(255, 255, 255);
-            font: 14px Futura, sans-serif;
-            margin: 0px;
-        }
-
-        .style-62 {
-            width: auto;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            margin: 20px 0 0 0;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            margin: 20px 0px 0px;
-            height: auto;
-            margin-bottom: 0px;
-            margin-top: 20px;
-            max-width: 100%;
-            box-sizing: border-box;
-            background-color: rgba(0, 0, 0, 0);
-        }
-
-        .style-63 {
-            width: 105px;
-            margin: 0;
+        .submenu-item {
             display: block;
-            height: auto;
-            margin-top: 0px;
-            margin-right: auto;
-            margin-left: auto;
-            background-color: rgba(0, 0, 0, 0);
-            max-width: 100%;
-            vertical-align: middle;
-            box-sizing: border-box;
-            border: 0px none rgb(0, 0, 238);
+            margin: 5px;
+            color: #000000;
+            text-decoration: none;
         }
 
-        .style-64 {
-            margin-top: 0px;
-            color: #FFF;
-            font-family: Futura, sans-serif;
-            font-size: 12px;
-            font-weight: 700;
-            margin-bottom: 2px;
-            line-height: 30px;
-            box-sizing: border-box;
+        .submenu-item:hover {
+            color: #A78BFA;
         }
 
-        .style-66 {
-            color: #000;
-            border: none;
-            width: 174px;
-            height: 26px;
-            padding-left: 5px;
-            background-color: #9e9e9e;
-            --footer-placeholder-color: #545353;
-            border: 0px none rgb(0, 0, 0);
-            width: 174px;
-            height: 26px;
-            padding-left: 5px;
-            background-color: rgb(158, 158, 158);
-            --footer-placeholder-color: #545353;
-            outline: rgb(0, 0, 0) none 0px;
-            border-radius: 0px;
-            appearance: none;
-            box-sizing: border-box;
-            line-height: normal;
-            font: 14px Futura, sans-serif;
-            margin: 0px;
-        }
-
-        .style-67 {
-            margin-top: 8px;
-            box-sizing: border-box;
-        }
-
-        .style-68 {
-            color: #FFF;
-            height: 23px;
-            padding: 0 8px;
-            cursor: pointer;
-            background-color: #444444;
-            border: none;
-            height: 23px;
-            padding: 0px 8px;
-            cursor: pointer;
-            background-color: rgb(68, 68, 68);
-            border: 0px none rgb(255, 255, 255);
-            font-family: Futura, sans-serif;
-            border-radius: 0px;
-            appearance: none;
-            box-sizing: border-box;
-            line-height: normal;
-            margin: 0px;
-        }
-
-        .style-69 {
-            display: flex;
-            justify-content: center;
-            margin-top: 24px;
-            box-sizing: border-box;
-        }
-
-        .style-71 {
-            color: #FFF;
-            font-size: 9px;
-            font-size: 9px;
-            font-family: Futura, sans-serif;
-            font-weight: 700;
-            margin-top: 0px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
+        .close-button:hover {
+            color: #A78BFA;
         }
     </style>
 </head>
@@ -786,23 +583,32 @@
 <body class="style-0">
 
     <div class="style-1">
+
         <div class="style-2">
 
             <div class="style-3">
+
                 <div class="style-4">
+
                     <video autoplay="" muted="" defaultmuted="" oncontextmenu="return false;" preload="auto" playsinline="" loop="" class="style-5" width:="" 100%;="" height:="" position:="" absolute;="" top:="" 0;="" left:="" object-fit:="" cover;="" transform:="" none;="">
-                        <source src="https://cdn.shopify.com/videos/c/o/v/d5cb858b21504012887e6f13735d9940.mp4" type="video/mp4" class="style-6" />
+                        <source src="./bg.mp4" type="video/mp4" class="style-6" />
                     </video>
+
                     <div class="style-7" background-image:="" linear-gradient(180deg,="" rgba(0,="" 0,="" 0),="" 0);="" --background-opacity-mobile:="" position:="" absolute;="" bottom:="" 0;="" left:="" right:="" width:="" 100%;="" height:="" margin:="" box-sizing:="" border-box;="" padding:="" 15%="" 32px;="" line-height:="" 1.5;="" text-align:="" center;=""></div>
                 </div>
+
             </div>
+
         </div>
 
         <div class="style-8">
+
             <div class="style-9">
-                <a href="/" aria-current="page" class="style-10">
+
+                <a href="#" aria-current="page" class="style-10">
                     <img src="./logo.png" alt="logo" class="style-11" /> 
                 </a>
+
             </div>
 
             <div class="style-12">
@@ -816,9 +622,17 @@
                 <div class="style-17">
                     <div class="style-18">
 
-                        <a href="https://aarnav1729.github.io/SnSRakhi2k23/" target="_blank" class="style-19">
                             <div class="style-20">
-                                Shop
+                                <div class="shop-btn" onclick="toggleSubMenu()">Shop</div>
+                                <div class="submenu" id="submenu">
+                                    <button class="close-button" onclick="closeSubMenu()">Close</button>
+                                    <a href="https://aarnav1729.github.io/SnSRakhi2k23/" target="_blank" class="submenu-item">Rakhis</a>
+                                    <a href="#" class="submenu-item">Nighties</a>
+                                    <a href="#" class="submenu-item">Earrings</a>
+                                    <a href="#" class="submenu-item">Necklaces</a>
+                                    <a href="#" class="submenu-item">Belts</a>
+                                </div>
+                                
                             </div>
                         </a> 
 
@@ -866,6 +680,21 @@
     
             // Call the function to update date and time when the page loads
             updateDateTime();
+            
+            function toggleSubMenu() {
+                const submenu = document.getElementById('submenu');
+                if (submenu.style.display === 'block') {
+                    submenu.style.display = 'none';
+                } else {
+                    submenu.style.display = 'block';
+                }
+            }
+
+            function closeSubMenu() {
+                const submenu = document.getElementById('submenu');
+                submenu.style.display = 'none';
+            }
+
         </script>
     
 </body>
